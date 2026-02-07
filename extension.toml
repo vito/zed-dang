@@ -1,0 +1,16 @@
+id = "dang"
+name = "Dang"
+version = "0.1.1"
+schema_version = 1
+description = "Dang language support for Zed"
+authors = ["vito"]
+repository = "https://github.com/vito/dang"
+
+[grammars.dang]
+repository = "https://github.com/vito/dang"
+commit = "109fc1026fa036f2a8b3bc85b73304be6cc2f4e3"
+path = "treesitter"
+
+[language_servers.dang-lsp]
+name = "Dang LSP"
+languages = ["Dang"]
