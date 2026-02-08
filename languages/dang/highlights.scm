@@ -20,6 +20,7 @@
   (directive_token)
   (on_token)
   (import_token)
+  (new_token)
 
   (and_token)
   (or_token)
