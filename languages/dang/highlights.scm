@@ -83,7 +83,7 @@
 
 ;; Field selections
 (select_or_call
-  (id) @function.method)
+  (field_id) @function.method)
 
 ;; Object selection (multi-field selection)
 (object_selection) @punctuation.bracket
