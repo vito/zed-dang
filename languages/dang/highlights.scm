@@ -37,6 +37,9 @@
 (string (immediate_escape) @string.escape) @string
 (doc_string) @string
 (triple_quote_string) @string
+(single_template) @string
+(multi_template) @string
+(multi_template (lang_tag_name) @label)
 (int) @constant.numeric
 (boolean) @constant.builtin.boolean
 (null) @constant.builtin
