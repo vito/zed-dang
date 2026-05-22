@@ -16,7 +16,6 @@
   (break_token)
   (continue_token)
   (case_token)
-  (assert_token)
   (directive_token)
   (on_token)
   (import_token)
