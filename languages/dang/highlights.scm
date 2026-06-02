@@ -163,8 +163,8 @@
 (arg_with_default
   (symbol) @variable.parameter)
 
-;; Class definitions
-(class (symbol) @type)
+;; Object definitions
+(object_decl (symbol) @type)
 (implements (symbol) @type)
 (interface (symbol) @type)
 (enum (symbol) @type)

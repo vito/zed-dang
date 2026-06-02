@@ -1,5 +1,5 @@
 ;; Type declarations
-(class
+(object_decl
   (symbol) @name) @item
 
 ;; Directive declarations
