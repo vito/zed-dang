@@ -6,23 +6,23 @@
 (directive_decl
   (directive_name) @name) @item
 
-;; Slot declarations (functions/methods/fields)
-;; Function slots with arguments and body
-(type_and_args_and_block_slot
+;; Field declarations (functions/methods/values)
+;; Function fields with arguments and body
+(type_and_args_and_block_field
   (symbol) @name) @item
 
-;; Function slots with body (zero-arity functions)
-(type_and_block_slot
+;; Function fields with body (zero-arity functions)
+(type_and_block_field
   (symbol) @name) @item
 
-;; Field slots with value
-(type_and_value_slot
+;; Fields with value and explicit type
+(type_and_value_field
   (symbol) @name) @item
 
-;; Field slots with just value (type inferred)
-(value_only_slot
+;; Fields with just value (type inferred)
+(value_only_field
   (symbol) @name) @item
 
-;; Field slots with just type (no value)
-(type_only_slot
+;; Fields with just type (no value)
+(type_only_field
   (symbol) @name) @item

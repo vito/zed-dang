@@ -142,18 +142,18 @@
 ;; Error highlighting
 (ERROR) @error
 
-;; Slot definitions
-(type_and_block_slot
+;; Field definitions
+(type_and_block_field
   (symbol) @function.method)
-(type_and_args_and_block_slot
+(type_and_args_and_block_field
   (symbol) @function.method)
-(type_and_value_slot
+(type_and_value_field
   (symbol) @function.method)
-(value_only_slot
+(value_only_field
   (symbol) @function.method)
-(type_only_slot
+(type_only_field
   (symbol) @function.method)
-(type_only_fun_slot
+(type_only_fun_field
   (symbol) @function.method)
 
 (arg_with_block_default
