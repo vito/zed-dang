@@ -13,7 +13,7 @@
   "[" @open
   "]" @close)
 
-(object
+(object_literal
   "{{" @open
   "}}" @close)
 
