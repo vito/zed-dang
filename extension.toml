@@ -8,7 +8,7 @@ repository = "https://github.com/vito/dang"
 
 [grammars.dang]
 repository = "https://github.com/vito/dang"
-commit = "8b15b6f455f666e6a919531ad9d1fbc0a6454391"
+commit = "838e50b6dce3ce44ee78d8ae51b750e089b6181c"
 path = "treesitter"
 
 [language_servers.dang-lsp]
