@@ -48,6 +48,7 @@
 (multi_template
   (lang_tag_part (lang_tag_name) @label))
 (int) @constant.numeric
+(float) @constant.numeric
 (boolean) @constant.builtin.boolean
 (null) @constant.builtin
 
@@ -70,13 +71,24 @@
   (bang_token)
   (arrow_token)
   (ampersand_token)
+  (equality_op)
+  (relational_op)
+  (additive_op)
+  (multiplicative_op)
+  (double_colon_token)
 ] @operator
+
+(unary_expr "!" @operator)
+
 ["{{" "}}" "{" "}" "[" "]" "(" ")"] @punctuation.bracket
 [
   (comma_token)
   (dot_token)
+  (colon_token)
 ] @punctuation.delimiter
 ["@" "|"] @punctuation.special
+
+(spread_token) @punctuation.special
 
 ;; Whitespace before `${` is parsed as part of the interpolation token because
 ;; whitespace is normally an extra; keep that prefix highlighted as string.
@@ -116,7 +128,9 @@
 
 ;; Identifiers - using more generic patterns
 (symbol) @variable
+(auto_call_symbol (id) @variable)
 (call (symbol) @function.method)
+(symbol_block (symbol) @function.method)
 
 ;; Key-value pairs
 (key_value
@@ -161,6 +175,8 @@
 (arg_with_type
   (symbol) @variable.parameter)
 (arg_with_default
+  (symbol) @variable.parameter)
+(block_param
   (symbol) @variable.parameter)
 
 ;; Object definitions
