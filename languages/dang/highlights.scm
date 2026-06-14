@@ -82,6 +82,7 @@
 ["{{" "}}" "{" "}" "[" "]" "(" ")"] @punctuation.bracket
 [
   (comma_token)
+  (semi_token)
   (dot_token)
   (colon_token)
 ] @punctuation.delimiter
