@@ -1,6 +1,6 @@
 id = "dang"
 name = "Dang"
-version = "0.1.1"
+version = "2.5.0"
 schema_version = 1
 description = "Dang language support for Zed"
 authors = ["vito"]

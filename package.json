@@ -1,6 +1,6 @@
 {
   "name": "zed-dang",
-  "version": "0.1.0",
+  "version": "2.5.0",
   "description": "Dang language extension for Zed editor",
   "main": "extension.toml",
   "keywords": [
